@@ -11,23 +11,23 @@
 </html>
 <!--]=]
 -- hi if you can read this then credits to Jack#9701 for telling me how to do this
---[[
-assert(sethiddentproperty, "sethiddenproperty not supported, please use another exploit.")
-assert(type(syn) == "table", "syn library not supported, please use another exploit.")
-assert(syn.protect_gui, "protect_gui not supported, please use another exploit.")
 
-local suite = loadstring(game:HttpGetAsync("https://github.com/richie0866/rbxm-suite/releases/latest/download/rbxm-suite.lua"))()
-local download = suite.download("AlpineTechnology/Proton@latest", "Proton.rbxm")
-local proton = suite.launch(download, {
-  runscripts = true
-})
+--assert(sethiddentproperty, "sethiddenproperty not supported, please use another exploit.")
+--assert(type(syn) == "table", "syn library not supported, please use another exploit.")
+--assert(syn.protect_gui, "protect_gui not supported, please use another exploit.")
 
-function protect(g)
-  assert(typeof(g) == "Instance" and g:IsA("LuaSourceContainer"), "GUI expected")
+--local suite = loadstring(game:HttpGetAsync("https://github.com/richie0866/rbxm-suite/releases/latest/download/rbxm-suite.lua"))()
+--local download = suite.download("AlpineTechnology/Proton@latest", "Proton.rbxm")
+--local proton = suite.launch(download, {
+  --runscripts = true
+--})
 
-  sethiddenproperty(g, "OnTopOfCoreBlur", true)
-  syn.protect_gui(g)
-end
-]]
+--function protect(g)
+  --assert(typeof(g) == "Instance" and g:IsA("LuaSourceContainer"), "GUI expected")
+
+  --sethiddenproperty(g, "OnTopOfCoreBlur", true)
+  --syn.protect_gui(g)
+--end
+
 print('testing')
 -->
