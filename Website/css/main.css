@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body{
+    background: #232323;
+    font-family: Poppins;
+}
+
+.mainWindow {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div {
+    display: block;
+}
+
+.codeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: height 1s;
+}
+
+.Code {
+    border-radius: 5px;
+    background: #292D3E;
+    box-shadow: rgb(0 0 0 / 50%) 0px 0px 5.5px;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: .5px solid #232635;
+}
+
+.codeContainer > *:not(.seperator) {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.seperator {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #e6e6e6;
+    box-shadow: #000000 0px 0px 6px;
+}
+
+.codeName {
+    color: #e6e6e6;
+    font-weight: 500;
+    font-size: 22px;
+    left: 50%;
+    right: 50%;
+}
+
+.codeBlock {
+    border-radius: 5px;
+    background: #191c27;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.codeBlock > span {
+    font-size: 18px;
+    font-weight: 450;
+
+    word-wrap: break-word;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.builtin {
+    color: rgb(255, 103, 169);
+}
+
+.bracket {
+    color: rgb(204, 204, 204);
+}
+
+.function {
+    color: rgb(192, 103, 255);
+}
+
+.string {
+    color: rgb(108, 152, 255);
+}
+
+.bool {
+    color: rgb(108, 152, 255);
+}

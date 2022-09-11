@@ -1,13 +1,88 @@
 --[=[<!DOCTYPE html>
-  <head>
-    <title>proton</title>
-  </head>
   <script is:inline>document.body.childNodes[0].TEXT_NODE&&document.body.childNodes[0].remove()</script>
-  <meta content="Project Proton" property="og:title" />
-  <meta content="A tool everybody needs." property="og:description" />
-  <meta content="https://prtn.ml" property="og:url" />
-  <meta content="https://prtn.ml/images/logo" property="og:image" />
-  <meta content="#FFFFF" data-react-helmet="true" name="theme-color" />
+  <meta content="Project Proton" property="og:title"/>
+  <meta content="A tool everybody needs." property="og:description"/>
+  <meta content="https://prtn.ml" property="og:url"/>
+  <meta content="https://prtn.ml/images/logo" property="og:image"/>
+  <meta content="#FFFFF" data-react-helmet="true" name="theme-color"/>
+
+  <head>
+    <title>Proton</title>
+    <link rel="icon" href="Icons/SmallLogo.png">
+    <link rel="stylesheet" href="css/main.css">
+    <script>
+      // credits to Masterzz
+      function write_text(parent, content){
+        content.forEach(
+          highlight => {
+            let span = document.createElement("span");
+            span.appendChild(document.createTextNode(highlight[1]));
+            span.className = highlight[0];
+
+            parent.appendChild(span);
+          }
+        );
+      };
+    </script>
+  </head>
+
+  <body>
+    <div class="mainWindow">
+      <span style="font-size: 75px; font-weight: bold; color: #343c5e">Project Proton</span>
+      <span style="font-size: 15px; color: #e6e6e6; margin-bottom: 5px;">A tool everybody needs.</span>
+
+      <div style="position: relative">
+        <div class="codeContainer">
+
+          <div class="Code">
+            <span class="codeName">Proton</span>
+            <div class="codeBlock" id="Pblock">
+              <script>
+                          
+              write_text(
+                document.getElementById("Pblock"), 
+                [
+                  ["builtin", "loadstring"],
+                  ["bracket", "("],
+                  ["builtin", "game"],
+                  ["bracket", ":"],
+                  ["function", "HttpGetAsync"],
+                  ["bracket", "("],
+                  ["string", `"https://prtn.ml"`],
+                  ["bracket", ","],
+                  ["bool", " true"],
+                  ["bracket", "))()"],
+                ]
+              );
+              </script>
+            </div>
+          </div>
+          
+          <div class="Code">
+            <span class="codeName">Proton-Core</span>
+            <div class="codeBlock" id="PCblock">
+              <script>
+                          
+              write_text(
+                document.getElementById("PCblock"), 
+                [
+                  ["builtin", "loadstring"],
+                  ["bracket", "("],
+                  ["builtin", "game"],
+                  ["bracket", ":"],
+                  ["function", "HttpGetAsync"],
+                  ["bracket", "("],
+                  ["string", `"https://prtn.ml/Core"`],
+                  ["bracket", ")) {--[[ Your Edits ]]}"],
+                ]
+              );
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
 <!--]=]
 print('testing')
