@@ -3,16 +3,15 @@
   <meta content="Project Proton" property="og:title"/>
   <meta content="A tool everybody needs." property="og:description"/>
   <meta content="https://prtn.ml" property="og:url"/>
-  <meta content="https://prtn.ml/images/logo" property="og:image"/>
+  <meta content="https://prtn.ml/Icons/logo" property="og:image"/>
   <meta content="#FFFFF" data-react-helmet="true" name="theme-color"/>
 
   <head>
     <title>Proton</title>
-    <link rel="icon" href="Icons/SmallLogo.png">
+    <link rel="icon" href="https://prtn.ml/Icons/SmallLogo.png">
     <link rel="stylesheet" href="css/main.css">
     <script>
-      // credits to Masterzz
-      function write_text(parent, content){
+      function write_text(parent, content) {
         content.forEach(
           highlight => {
             let span = document.createElement("span");
@@ -27,9 +26,10 @@
   </head>
 
   <body>
+    <div id="particles-js"></div>
     <div class="mainWindow">
-      <span style="font-size: 75px; font-weight: bold; color: #343c5e">Project Proton</span>
-      <span style="font-size: 15px; color: #e6e6e6; margin-bottom: 5px;">A tool everybody needs.</span>
+      <span style="font-size: 75px; font-weight: bold; color: #242625">Project Proton</span>
+      <span style="font-size: 15px; color: black; margin-bottom: 5px;">A tool everybody needs.</span>
 
       <div style="position: relative">
         <div class="codeContainer">
@@ -82,6 +82,9 @@
         </div>
       </div>
     </div>
+
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
 <!--]=]

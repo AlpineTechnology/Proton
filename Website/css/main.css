@@ -1,9 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-
-body{
-    background: #232323;
+body { 
     font-family: Poppins;
 }
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+canvas {
+    display: block;
+}
+
+#particles-js{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  
 
 .mainWindow {
     position: absolute;
@@ -28,7 +45,7 @@ div {
 
 .Code {
     border-radius: 5px;
-    background: #292D3E;
+    background: black;
     box-shadow: rgb(0 0 0 / 50%) 0px 0px 5.5px;
     padding: 7px;
     display: flex;
@@ -42,15 +59,6 @@ div {
     margin-bottom: 5px;
 }
 
-.seperator {
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-    border-radius: 50%;
-    background: #e6e6e6;
-    box-shadow: #000000 0px 0px 6px;
-}
-
 .codeName {
     color: #e6e6e6;
     font-weight: 500;
@@ -61,7 +69,7 @@ div {
 
 .codeBlock {
     border-radius: 5px;
-    background: #191c27;
+    background: rgb(25,25,25);
     padding-left: 12px;
     padding-right: 12px;
     padding-top: 6px;
