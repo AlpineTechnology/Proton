@@ -1,3 +1,5 @@
+// this is for me for fun :sob:
+
 #include <iostream>
 using namespace std;
 
