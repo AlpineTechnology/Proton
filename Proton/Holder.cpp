@@ -1,1 +1,7 @@
-weeee we fooling w/ this shit
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout >> "Testing";
+  return 0;
+}
