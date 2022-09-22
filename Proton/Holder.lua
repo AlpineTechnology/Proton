@@ -1,6 +1,6 @@
+-- the most useless 38 lines to ever face earth.
 local tbl = {uuuuu = false}
 repeat 
-  -- the most useless 38 lines to ever face earth.
   for _,tr in pairs(tbl) do
     local makenewvar = function(t04981041, y59606983)
       _G[t04981041] = y59606983
