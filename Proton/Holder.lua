@@ -31,7 +31,7 @@ repeat
                 return 69696969696996969
               end
               return _G.r(var_2947252857252)
-            end)
+            end)()
           end)
         end)  
       end)
